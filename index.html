@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Image Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Advanced Image Gallery</h1>
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="animals">Animals</button>
+            <button class="filter-btn" data-category="city">City</button>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <div class="image-card" data-category="nature">
+            <img src="https://picsum.photos/400?random=1" alt="">
+        </div>
+        <div class="image-card" data-category="animals">
+            <img src="https://picsum.photos/400?random=2" alt="">
+        </div>
+        <div class="image-card" data-category="city">
+            <img src="https://picsum.photos/400?random=3" alt="">
+        </div>
+        <div class="image-card" data-category="nature">
+            <img src="https://picsum.photos/400?random=4" alt="">
+        </div>
+        <div class="image-card" data-category="animals">
+            <img src="https://picsum.photos/400?random=5" alt="">
+        </div>
+        <div class="image-card" data-category="city">
+            <img src="https://picsum.photos/400?random=6" alt="">
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span id="closeBtn" class="close">&times;</span>
+        <img id="lightboxImg" src="" alt="">
+        <span id="prevBtn" class="nav prev">&#10094;</span>
+        <span id="nextBtn" class="nav next">&#10095;</span>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
